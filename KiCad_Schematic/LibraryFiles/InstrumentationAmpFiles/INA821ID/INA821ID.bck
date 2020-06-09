@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP INA821ID
+D Instrumentation Amplifiers Precision Low Power INA
+K
+F http://www.ti.com/lit/ds/symlink/ina821.pdf
+$ENDCMP
+#
+#End Doc Library
