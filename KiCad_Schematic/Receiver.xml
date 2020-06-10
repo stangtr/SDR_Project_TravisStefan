@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/archie/Spring2020/Electronics II/SDR_Project_TravisStefan/KiCad_Schematic/Receiver.sch</source>
+    <date>Wed 10 Jun 2020 06:27:35 AM PDT</date>
+    <tool>Eeschema 5.1.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SDReceiver</title>
+        <company/>
+        <rev>2</rev>
+        <date/>
+        <source>Receiver.sch</source>
+        <comment number="1" value="Stefan Hess, Travis Stanger"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Input (From Antenna)</value>
+      <footprint>Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9498EE</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>4.3n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1887U1H432JA01-01.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E98D23F</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>6.2u</value>
+      <footprint>Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm</footprint>
+      <datasheet>http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf</datasheet>
+      <libsource lib="pspice" part="INDUCTOR" description="Inductor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E98DDE7</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>5.1n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1887U1H512JA01-01.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E98E65A</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>5.1u</value>
+      <footprint>Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm</footprint>
+      <datasheet>http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf</datasheet>
+      <libsource lib="pspice" part="INDUCTOR" description="Inductor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E98F1A0</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>4.3n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1887U1H432JA01-01.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E99087F</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>Si5351A-B-GT</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf</datasheet>
+      <libsource lib="Oscillator" part="Si5351A-B-GT" description="I2C Programmable Any-Frequency CMOS Clock Generator, MSOP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9B5F65</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>INA821ID</value>
+      <footprint>digikey-footprints:SOIC-8_W3.9mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/ina821.pdf</datasheet>
+      <fields>
+        <field name="Description">Instrumentation Amplifiers Precision Low Power INA</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA821ID</field>
+        <field name="Mouser Part Number">595-INA821ID</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-INA821ID</field>
+      </fields>
+      <libsource lib="Receiver-rescue" part="INA821ID-INA821ID" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA00369</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>INA821ID</value>
+      <footprint>digikey-footprints:SOIC-8_W3.9mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/ina821.pdf</datasheet>
+      <fields>
+        <field name="Description">Instrumentation Amplifiers Precision Low Power INA</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA821ID</field>
+        <field name="Mouser Part Number">595-INA821ID</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-INA821ID</field>
+      </fields>
+      <libsource lib="Receiver-rescue" part="INA821ID-INA821ID" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA03204</tstamp>
+    </comp>
+    <comp ref="A1">
+      <value>Arduino_Nano_v3.x</value>
+      <footprint>Module:Arduino_Nano</footprint>
+      <datasheet>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</datasheet>
+      <libsource lib="MCU_Module" part="Arduino_Nano_v3.x" description="Arduino Nano v3.x"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9B7F41</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Aux. Out (to comp.)</value>
+      <footprint>Connector_Audio:Jack_3.5mm_Switronic_ST-005-G_horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="AudioJack3" description="Audio Jack, 3 Poles (Stereo / TRS)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA1CDCC</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>Ard_GND</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NC_Small" description="Jumper, normally closed, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA2DEA7</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>SN74AC74DR</value>
+      <footprint>digikey-footprints:SOIC-14_W3.9mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74ac74.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="SN74AC74DR-2020-04-23_18-11-59" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA5C499</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAA8D1E</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAAE522</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAB0AE6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAB30F4</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAB555B</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB4571C</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB57294</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAF7437</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAFC91B</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB047AC</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB0C5C6</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>750p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://www.nteinc.com/capacitor_web/pdf/90000.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB10593</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>750p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://www.nteinc.com/capacitor_web/pdf/90000.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB11CDF</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>750p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://www.nteinc.com/capacitor_web/pdf/90000.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB1670F</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>750p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://www.nteinc.com/capacitor_web/pdf/90000.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB1AC2D</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Input_GND</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NC_Small" description="Jumper, normally closed, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB7B0F2</tstamp>
+    </comp>
+    <comp ref="JP4">
+      <value>Aux_GND</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NC_Small" description="Jumper, normally closed, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB7F84F</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC0690E</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC06914</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC15508</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>GND_2.5</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC5155C</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>Ref_2.5</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC5BD1C</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>I_LO</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC61206</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>Q_LO</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC65DB7</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>Clk0</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC6B2A7</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>GND_Pt</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC7036D</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>SN74CBT3253C</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74cbt3253c.pdf?ts=1587934047839</datasheet>
+      <libsource lib="Receiver-rescue" part="SN74CBT3253C-SN74CBT_MUX" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ECAD27A</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>6.2u</value>
+      <footprint>Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm</footprint>
+      <datasheet>http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf</datasheet>
+      <libsource lib="pspice" part="INDUCTOR" description="Inductor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E98FF99</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>Smooth_4.3</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NC_Small" description="Jumper, normally closed, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA3029C</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10u</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm</footprint>
+      <datasheet>https://www.digikey.com/en/datasheets/tdk-corporation/tdk-corporation-leadmlcc-conventional-fk-en</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA36127</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>2N2222ACS-ND</value>
+      <footprint>digikey-footprints:TO-18-3</footprint>
+      <datasheet>https://my.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=2N2221A.PDF</datasheet>
+      <libsource lib="Receiver-rescue" part="2N2222ACS-ND-2N2222ACS-ND" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA59565</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA62330</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA72D9E</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>+4.3V</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAA8B7B</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>+5V</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAB5CD1</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LM358DR</value>
+      <footprint>digikey-footprints:SOIC-8_W3.9mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm358.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe</datasheet>
+      <libsource lib="Receiver-rescue" part="LM358DR-2020-04-24_03-53-25" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA3F8E0</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA48119</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>8.2k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAA6BE0</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>15k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAAD2A2</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>8.2k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAB3778</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>15k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAB9D1A</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>220p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1049_GOLDMAX_C0G.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EACD055</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>10u</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm</footprint>
+      <datasheet>https://www.digikey.com/en/datasheets/tdk-corporation/tdk-corporation-leadmlcc-conventional-fk-en</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAD359C</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>10u</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm</footprint>
+      <datasheet>https://www.digikey.com/en/datasheets/tdk-corporation/tdk-corporation-leadmlcc-conventional-fk-en</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAD9A26</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>220p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1049_GOLDMAX_C0G.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EAE0062</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>100p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1049_GOLDMAX_C0G.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB1866E</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>100p</value>
+      <footprint>Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1049_GOLDMAX_C0G.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB1ED5C</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm</footprint>
+      <datasheet>http://datasheets.avx.com/SR-Series.pdf</datasheet>
+      <libsource lib="Receiver-rescue" part="C-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA6CA02</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>Crystal</value>
+      <footprint>Crystal:Crystal_HC49-U_Vertical</footprint>
+      <datasheet>http://www.raltron.com/wp-content/uploads/2016/12/AS-SERIES.pdf</datasheet>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA978FF</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>GND_Pt</value>
+      <footprint>TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Receiver-rescue" part="TestPoint-aawwu" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC8054F</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>2.2k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED91D3B</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>2.2k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ED9A242</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="AudioJack3">
+      <description>Audio Jack, 3 Poles (Stereo / TRS)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AudioJack3</field>
+      </fields>
+      <pins>
+        <pin num="R" name="~" type="passive"/>
+        <pin num="S" name="~" type="passive"/>
+        <pin num="T" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Jumper_NC_Small">
+      <description>Jumper, normally closed, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NC_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Module" part="Arduino_Nano_v2.x">
+      <aliases>
+        <alias>Arduino_Nano_v3.x</alias>
+      </aliases>
+      <description>Arduino Nano v2.x</description>
+      <docs>https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf</docs>
+      <footprints>
+        <fp>Arduino*Nano*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_Nano_v2.x</field>
+        <field name="Footprint">Module:Arduino_Nano</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D1/TX" type="BiDi"/>
+        <pin num="2" name="D0/RX" type="BiDi"/>
+        <pin num="3" name="~RESET" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="D2" type="BiDi"/>
+        <pin num="6" name="D3" type="BiDi"/>
+        <pin num="7" name="D4" type="BiDi"/>
+        <pin num="8" name="D5" type="BiDi"/>
+        <pin num="9" name="D6" type="BiDi"/>
+        <pin num="10" name="D7" type="BiDi"/>
+        <pin num="11" name="D8" type="BiDi"/>
+        <pin num="12" name="D9" type="BiDi"/>
+        <pin num="13" name="D10" type="BiDi"/>
+        <pin num="14" name="D11" type="BiDi"/>
+        <pin num="15" name="D12" type="BiDi"/>
+        <pin num="16" name="D13" type="BiDi"/>
+        <pin num="17" name="3V3" type="power_out"/>
+        <pin num="18" name="AREF" type="input"/>
+        <pin num="19" name="A0" type="BiDi"/>
+        <pin num="20" name="A1" type="BiDi"/>
+        <pin num="21" name="A2" type="BiDi"/>
+        <pin num="22" name="A3" type="BiDi"/>
+        <pin num="23" name="A4" type="BiDi"/>
+        <pin num="24" name="A5" type="BiDi"/>
+        <pin num="25" name="A6" type="BiDi"/>
+        <pin num="26" name="A7" type="BiDi"/>
+        <pin num="27" name="+5V" type="power_out"/>
+        <pin num="28" name="~RESET" type="input"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Oscillator" part="Si5351A-B-GT">
+      <description>I2C Programmable Any-Frequency CMOS Clock Generator, MSOP-8</description>
+      <docs>https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Si5351A-B-GT</field>
+        <field name="Footprint">Package_SO:MSOP-10_3x3mm_P0.5mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="XA" type="input"/>
+        <pin num="3" name="XB" type="input"/>
+        <pin num="4" name="SCL" type="input"/>
+        <pin num="5" name="SDA" type="BiDi"/>
+        <pin num="6" name="CLK2" type="output"/>
+        <pin num="7" name="VDDO" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="CLK1" type="output"/>
+        <pin num="10" name="CLK0" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Receiver-rescue" part="2N2222ACS-ND-2N2222ACS-ND">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N2222ACS-ND-2N2222ACS-ND</field>
+        <field name="Footprint">digikey-footprints:TO-18-3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Receiver-rescue" part="C-aawwu">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-aawwu</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Receiver-rescue" part="INA821ID-INA821ID">
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">INA821ID-INA821ID</field>
+        <field name="Footprint">SOIC127P600X175-8N</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/ina821.pdf</field>
+        <field name="Description">Instrumentation Amplifiers Precision Low Power INA</field>
+        <field name="Height">1.75</field>
+        <field name="Mouser Part Number">595-INA821ID</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-INA821ID</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA821ID</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-IN" type="passive"/>
+        <pin num="2" name="RG_1" type="passive"/>
+        <pin num="3" name="RG_2" type="passive"/>
+        <pin num="4" name="+IN" type="passive"/>
+        <pin num="5" name="-VS" type="power_in"/>
+        <pin num="6" name="REF" type="passive"/>
+        <pin num="7" name="OUT" type="passive"/>
+        <pin num="8" name="+VS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Receiver-rescue" part="LM358DR-2020-04-24_03-53-25">
+      <footprints>
+        <fp>D8</fp>
+        <fp>D8-M</fp>
+        <fp>D8-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM358DR-2020-04-24_03-53-25</field>
+        <field name="Footprint">D8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1OUT" type="output"/>
+        <pin num="2" name="1IN-" type="input"/>
+        <pin num="3" name="1IN+" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="2IN+" type="input"/>
+        <pin num="6" name="2IN-" type="input"/>
+        <pin num="7" name="2OUT" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Receiver-rescue" part="SN74AC74DR-2020-04-23_18-11-59">
+      <footprints>
+        <fp>D14</fp>
+        <fp>D14-M</fp>
+        <fp>D14-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AC74DR-2020-04-23_18-11-59</field>
+        <field name="Footprint">D14</field>
+      </fields>
+      <pins>
+        <pin num="1" name="*1CLR" type="input"/>
+        <pin num="2" name="1D" type="input"/>
+        <pin num="3" name="1CLK" type="input"/>
+        <pin num="4" name="*1PRE" type="input"/>
+        <pin num="5" name="1Q" type="output"/>
+        <pin num="6" name="*1Q" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="*2Q" type="output"/>
+        <pin num="9" name="2Q" type="output"/>
+        <pin num="10" name="*2PRE" type="input"/>
+        <pin num="11" name="2CLK" type="input"/>
+        <pin num="12" name="2D" type="input"/>
+        <pin num="13" name="*2CLR" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Receiver-rescue" part="SN74CBT3253C-SN74CBT_MUX">
+      <footprints>
+        <fp>DIP?16*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74CBT3253C-SN74CBT_MUX</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Ea" type="input"/>
+        <pin num="2" name="S1" type="input"/>
+        <pin num="3" name="I3a" type="passive"/>
+        <pin num="4" name="I2a" type="passive"/>
+        <pin num="5" name="I1a" type="passive"/>
+        <pin num="6" name="I0a" type="passive"/>
+        <pin num="7" name="Za" type="passive"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="Zb" type="passive"/>
+        <pin num="10" name="I0b" type="passive"/>
+        <pin num="11" name="I1b" type="passive"/>
+        <pin num="12" name="I2b" type="passive"/>
+        <pin num="13" name="I3b" type="passive"/>
+        <pin num="14" name="S0" type="input"/>
+        <pin num="15" name="Eb" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Receiver-rescue" part="TestPoint-aawwu">
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint-aawwu</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="pspice" part="INDUCTOR">
+      <description>Inductor symbol for simulation only</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="MCU_Module">
+      <uri>/usr/share/kicad/library/MCU_Module.lib</uri>
+    </library>
+    <library logical="Oscillator">
+      <uri>/usr/share/kicad/library/Oscillator.lib</uri>
+    </library>
+    <library logical="Receiver-rescue">
+      <uri>/home/archie/Spring2020/Electronics II/SDR_Project_TravisStefan/KiCad_Schematic/Receiver-rescue.lib</uri>
+    </library>
+    <library logical="pspice">
+      <uri>/usr/share/kicad/library/pspice.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="C10" pin="2"/>
+      <node ref="U1" pin="8"/>
+      <node ref="C8" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="C25" pin="2"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="JP4" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="U3" pin="15"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="IC2" pin="5"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="C4" pin="2"/>
+      <node ref="TP3" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="JP3" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="U3" pin="8"/>
+      <node ref="IC1" pin="5"/>
+    </net>
+    <net code="2" name="Net-(C4-Pad1)">
+      <node ref="R3" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="3" name="+5V">
+      <node ref="JP2" pin="2"/>
+      <node ref="TP6" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="A1" pin="27"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="4" name="Net-(C17-Pad2)">
+      <node ref="C17" pin="2"/>
+      <node ref="L3" pin="1"/>
+    </net>
+    <net code="5" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="6" name="Net-(IC2-Pad3)">
+      <node ref="IC2" pin="3"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="7" name="Net-(IC2-Pad2)">
+      <node ref="R5" pin="1"/>
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="8" name="/GND_2.5">
+      <node ref="TP1" pin="1"/>
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="9"/>
+      <node ref="L3" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="9" name="/90">
+      <node ref="IC2" pin="4"/>
+      <node ref="U3" pin="5"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="10" name="/270">
+      <node ref="C6" pin="1"/>
+      <node ref="U3" pin="13"/>
+      <node ref="U3" pin="3"/>
+      <node ref="IC2" pin="1"/>
+    </net>
+    <net code="11" name="/Ref_2.5">
+      <node ref="C23" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="IC2" pin="6"/>
+      <node ref="TP9" pin="1"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="12" name="/SDA">
+      <node ref="A1" pin="23"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="13" name="/SCL">
+      <node ref="U1" pin="4"/>
+      <node ref="A1" pin="24"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="14" name="+3V3">
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U2" pin="14"/>
+      <node ref="U2" pin="13"/>
+      <node ref="U2" pin="10"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R13" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="A1" pin="17"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="15" name="+4.3V_S">
+      <node ref="IC1" pin="8"/>
+      <node ref="C11" pin="1"/>
+      <node ref="IC2" pin="8"/>
+      <node ref="C10" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="JP2" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U3" pin="16"/>
+      <node ref="U4" pin="8"/>
+      <node ref="TP7" pin="1"/>
+    </net>
+    <net code="16" name="/0">
+      <node ref="U3" pin="10"/>
+      <node ref="U3" pin="6"/>
+      <node ref="C9" pin="1"/>
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="17" name="/180">
+      <node ref="IC1" pin="1"/>
+      <node ref="U3" pin="12"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad2)">
+      <node ref="Y1" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="19" name="Net-(C22-Pad1)">
+      <node ref="C22" pin="1"/>
+      <node ref="C24" pin="2"/>
+      <node ref="U4" pin="6"/>
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="20" name="/Q_sig">
+      <node ref="C24" pin="1"/>
+      <node ref="J2" pin="R"/>
+    </net>
+    <net code="21" name="Net-(C19-Pad1)">
+      <node ref="C19" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="22" name="Net-(C18-Pad1)">
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="1"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C18" pin="1"/>
+    </net>
+    <net code="23" name="Net-(C18-Pad2)">
+      <node ref="R9" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="C18" pin="2"/>
+    </net>
+    <net code="24" name="Net-(C22-Pad2)">
+      <node ref="R11" pin="1"/>
+      <node ref="C22" pin="2"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="25" name="/I_sig">
+      <node ref="C20" pin="1"/>
+      <node ref="J2" pin="T"/>
+    </net>
+    <net code="26" name="Net-(A1-Pad15)">
+      <node ref="A1" pin="15"/>
+    </net>
+    <net code="27" name="Net-(A1-Pad16)">
+      <node ref="A1" pin="16"/>
+    </net>
+    <net code="28" name="Net-(A1-Pad18)">
+      <node ref="A1" pin="18"/>
+    </net>
+    <net code="29" name="Net-(A1-Pad19)">
+      <node ref="A1" pin="19"/>
+    </net>
+    <net code="30" name="Net-(A1-Pad2)">
+      <node ref="A1" pin="2"/>
+    </net>
+    <net code="31" name="Net-(A1-Pad20)">
+      <node ref="A1" pin="20"/>
+    </net>
+    <net code="32" name="Net-(A1-Pad21)">
+      <node ref="A1" pin="21"/>
+    </net>
+    <net code="33" name="Net-(A1-Pad22)">
+      <node ref="A1" pin="22"/>
+    </net>
+    <net code="34" name="Net-(A1-Pad14)">
+      <node ref="A1" pin="14"/>
+    </net>
+    <net code="35" name="Net-(A1-Pad25)">
+      <node ref="A1" pin="25"/>
+    </net>
+    <net code="36" name="Net-(A1-Pad26)">
+      <node ref="A1" pin="26"/>
+    </net>
+    <net code="37" name="Net-(A1-Pad28)">
+      <node ref="A1" pin="28"/>
+    </net>
+    <net code="38" name="Net-(A1-Pad29)">
+      <node ref="JP3" pin="1"/>
+      <node ref="A1" pin="4"/>
+      <node ref="A1" pin="29"/>
+    </net>
+    <net code="39" name="Net-(A1-Pad3)">
+      <node ref="A1" pin="3"/>
+    </net>
+    <net code="40" name="Net-(A1-Pad30)">
+      <node ref="A1" pin="30"/>
+    </net>
+    <net code="41" name="Net-(A1-Pad11)">
+      <node ref="A1" pin="11"/>
+    </net>
+    <net code="42" name="Net-(A1-Pad12)">
+      <node ref="A1" pin="12"/>
+    </net>
+    <net code="43" name="Net-(A1-Pad13)">
+      <node ref="A1" pin="13"/>
+    </net>
+    <net code="44" name="Net-(A1-Pad1)">
+      <node ref="A1" pin="1"/>
+    </net>
+    <net code="45" name="Net-(A1-Pad10)">
+      <node ref="A1" pin="10"/>
+    </net>
+    <net code="46" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="47" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="48" name="Net-(A1-Pad5)">
+      <node ref="A1" pin="5"/>
+    </net>
+    <net code="49" name="Net-(A1-Pad6)">
+      <node ref="A1" pin="6"/>
+    </net>
+    <net code="50" name="Net-(A1-Pad7)">
+      <node ref="A1" pin="7"/>
+    </net>
+    <net code="51" name="Net-(A1-Pad8)">
+      <node ref="A1" pin="8"/>
+    </net>
+    <net code="52" name="Net-(A1-Pad9)">
+      <node ref="A1" pin="9"/>
+    </net>
+    <net code="53" name="Net-(J2-PadS)">
+      <node ref="JP4" pin="1"/>
+      <node ref="J2" pin="S"/>
+    </net>
+    <net code="54" name="Net-(C16-Pad1)">
+      <node ref="L2" pin="2"/>
+      <node ref="JP1" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="55" name="Net-(C15-Pad2)">
+      <node ref="J1" pin="1"/>
+      <node ref="C15" pin="2"/>
+    </net>
+    <net code="56" name="Net-(C15-Pad1)">
+      <node ref="C15" pin="1"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="57" name="Net-(C16-Pad2)">
+      <node ref="L2" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="58" name="/Q_sig_O">
+      <node ref="IC2" pin="7"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="59" name="/I_sig_O">
+      <node ref="IC1" pin="7"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="60" name="Net-(U1-Pad3)">
+      <node ref="Y1" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="61" name="Net-(IC1-Pad2)">
+      <node ref="IC1" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="62" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="63" name="Net-(TP4-Pad1)">
+      <node ref="U2" pin="11"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U2" pin="3"/>
+      <node ref="TP4" pin="1"/>
+    </net>
+    <net code="64" name="/I_LO">
+      <node ref="U2" pin="12"/>
+      <node ref="TP5" pin="1"/>
+      <node ref="U3" pin="14"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="65" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="66" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="67" name="/Q_LO">
+      <node ref="U2" pin="8"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+  </nets>
+</export>
